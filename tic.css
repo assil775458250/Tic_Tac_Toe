@@ -43,7 +43,7 @@
 
 
 
-#main{
+body{
   display: flex;
   justify-content: center;  /* وسط أفقي */
   align-items: center;      /* وسط عمودي */
