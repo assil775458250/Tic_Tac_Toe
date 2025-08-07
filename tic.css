@@ -1,0 +1,109 @@
+/* BREAKPOINTS */
+/*
+480
+768
+992
+1200
+ */
+ *{
+    margin: 0;
+ }
+:root
+{
+    --secondcolor: #ffe100;
+}
+ @media (width<400px) 
+ {
+     :root
+{
+   --maincolor:#f22;
+   --width_game: 300px;
+}
+    
+ }
+
+ @media (400px<width<500px ) 
+ {
+     :root
+{
+   --maincolor:#f22;
+   --width_game: 400px;
+}
+    
+ }
+  @media (width>=500px) 
+ {
+    :root
+{
+   --maincolor:#f22;
+   --width_game: 500px;
+}
+ }
+ 
+
+
+
+#main{
+  display: flex;
+  justify-content: center;  /* وسط أفقي */
+  align-items: center;      /* وسط عمودي */
+  height: 100vh;           /*  ارتفاع الشاشة بالكامل */
+  margin: 0;
+  background-color: #ddd;   /* اختياري للتجربة */
+}
+
+.game
+{
+    position: relative;
+    text-align: center;
+    width:var(--width_game);
+    height:calc((var(--width_game) + 40px));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white; 
+    margin: auto;
+    font-weight: bolder;
+    font-size: 150%;
+    padding: 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px 30px 30px 15px;
+    box-shadow: 0 0 20px #7b7979;
+    
+}
+.title
+{
+    background-color: var(--maincolor);
+    padding: 10px;
+    margin: 1vh;
+    border-radius: 20px 30px ;
+ 
+}
+.title span
+{
+    color: var(--secondcolor);
+}
+
+.square
+{
+    width:calc((var(--width_game) - 55px) / 3);
+    height: calc((var(--width_game) - 55px) / 3);
+    background-color: var(--maincolor);
+    float: left;
+    margin: 6px;
+    font-size: calc((var(--width_game) / 5.5));
+    border-radius: 10px;
+}
+
+.square:hover
+{
+    background-color: rgb(185, 3, 3);
+    cursor: pointer;
+}
+
+#body_tic
+{
+    background: linear-gradient(to right,#eeeeee,#aaa,#eeeeee);
+}
+#face_tic
+{
+    width:calc(var(--width_game) - 100px) ;
+}
