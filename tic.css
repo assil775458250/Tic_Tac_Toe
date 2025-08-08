@@ -107,3 +107,41 @@ body{
 {
     width:calc(var(--width_game) - 100px) ;
 }
+#door
+{
+     display: flex;
+  justify-content: space-around;  /* وسط أفقي */
+  flex-wrap: wrap;
+  align-items: center;      /* وسط عمودي */
+  height: 100vh;           /*  ارتفاع الشاشة بالكامل */
+  width: 100vw;
+  margin: 0;
+}
+#door #d1
+{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.636);
+    padding: 20px;
+    border: 2px solid black;
+}
+#d1:hover
+{
+    box-shadow: 0 0 10px rgb(255, 251, 0);
+}
+
+
+#door #d2
+{
+    width: 40vh;
+    height: 40vh;
+     border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.636);
+    padding: 20px;
+    border: 2px solid black;
+}
+#d2:hover
+{
+    box-shadow: 0 0 10px red;
+}

@@ -91,7 +91,7 @@ else if (squares[1]!='' & squares[2]!=''& squares[3]!='' & squares[4]!='' & squa
 {
         for (let i =1 ; i<10;i++)
     {
-        document.getElementById('item'+i).style.backgroundColor="#000";
+        document.getElementById('item'+i).style.backgroundColor="#3b3b3b";
     }
     title_game.innerHTML=`<span style="color:${secondcolor}">X</span> & <span style="color:${secondcolor}">O</span> are balence `;
     setInterval(() => {
@@ -115,8 +115,9 @@ else if (squares[1]!='' & squares[2]!=''& squares[3]!='' & squares[4]!='' & squa
         class_game.innerHTML+=`<img src="bala.gif" alt="" style="border-radius: 50%;width: 100%;position: absolute;top:  50px;left: 0px;">`;
      
      }
-    }
-    else{}
+     else{}
+    } 
+   
 }
 
 function game(id)
